@@ -1,0 +1,69 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+
+header.hero 
+    { display: flex; justify-content: center; align-items: center; height: 100vh
+}
+
+header.hero img { max-width: 100%; max-height: 100%
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.about, .social-media {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: red;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto; /* Center the icons container */
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header.hero .hero-text {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header.hero .hero-text {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    .about, .social-media {
+        padding: 0 10px;
+    }
+}
